@@ -40,7 +40,7 @@ function hirePriest(){
 };
 
 
-var pontificalKnighthood = 0;
+/*var pontificalKnighthood = 0;
 function pontificalKnighthood(){
 	var pontificalKnighthoodCost = 1000;
 	if(liras >= pontificalKnighthoodCost({
@@ -51,7 +51,7 @@ function pontificalKnighthood(){
         document.getElementById('liras').textContent = liras;  
 	}
 };
-
+*/
 window.setInterval(function(){  //have buildings "click" every second
 	liraClick(deacons);
 	liraClick(priests * 10);
