@@ -3,23 +3,48 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<button onclick="waferClick(1)">Click Me!</button>
+		<button onclick="waferClick(clickPower)" id="onclick">Click Me!</button>
 		<br>
 		Wafers: <span id="wafers">0</span>
+		
 		<div id="buildings">
-		<button onclick="hireDeacon()">Hire Deacon (gives 1 wafer per second)</button>
+			
+		<button id="hireDeacon" onclick="hireDeacon()">Hire Deacon (gives 1 wafer per second)</button>
 		<br>
-		Deacons: <span id="deacons">0</span>
+		Deacons: <span id="deacons">1</span>
 		<br>
 	    Cost: <span id="deaconCost">100</span>
 		<br>
-		<button onclick="hirePriest()">Hire Priest (gives 10 wafers per second)</button>
+		
+		<button id="hirePriest" onclick="hirePriest()">Hire Priest (gives 10 wafers per second)</button>
 		<br>
 		Priests: <span id="priests">0</span>
 		<br>
 	    Cost: <span id="priestCost">1000</span>
 	    <br>
+	    
+	    <button id="hireMonsignor" onclick="hireMonsignor()">Hire Monsignor (gives 100 wafers per second)</button>
+		<br>
+		Monsignori: <span id="monsignori">0</span>
+		<br>
+	    Cost: <span id="monsignorCost">10000</span>
+	    <br>
+	    <br>
+	    
+	    </div> 
+	    
+	    <div id="upgrades">
+	    
+	    <button onclick="buyClickUpgrade1()">Get click upgrade (clicking twice as powerful)</button>
+		<br>
+	    Cost: <span id="clickUpgrade1Cost">2000</span>
+	    <br>
+	    Purchased: <span id="clickUpgrade1Purchased">No</span>
+	    
+	    </div>
+	    
 	    <br>
 	    <script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
+
