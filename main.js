@@ -1,4 +1,4 @@
-var clickPower = 1; //wafers per click (works)
+var clickPower = 1; //wafers per click 
 
 var wafers = 0;
 function waferClick(number){  //primary click function 
