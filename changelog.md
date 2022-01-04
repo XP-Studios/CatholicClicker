@@ -8,4 +8,6 @@
 <br>
 0.0.4: rename liras to wafers, priests (and other buildings will) now add respective amounts of wafers every 0.1 seconds (25 Nov 2021)
 <br>
-0.0.5 you now start with one deacon, CSS, introduced upgrade
+0.0.5: you now start with one deacon, CSS, introduced upgrade
+<br>
+0.0.6: "Click me" button now says "transubstantiate", add buttons to sell/fire clergy, building IDs now labeled as clergy
