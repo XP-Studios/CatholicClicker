@@ -3,11 +3,13 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<button onclick="waferClick(clickPower)" id="onclick">Click Me!</button>
+		<button onclick="waferClick(clickPower)" id="onclick">Transubstantiate!</button>
 		<br>
 		Wafers: <span id="wafers">0</span>
 		
-		<div id="buildings">
+		<div id="clergy">
+			
+		<h3>Hire Clergy</h3>
 			
 		<button id="hireDeacon" onclick="hireDeacon()">Hire Deacon (gives 1 wafer per second)</button>
 		<br>
@@ -23,11 +25,18 @@
 	    Cost: <span id="priestCost">1000</span>
 	    <br>
 	    
-	    <button id="hireMonsignor" onclick="hireMonsignor()">Hire Monsignor (gives 100 wafers per second)</button>
+	    <button id="hirePastor" onclick="hirePastor()">Hire Pastor (gives 100 wafers per second)</button>
+		<br>
+		Pastors: <span id="pastors">0</span>
+		<br>
+	    Cost: <span id="pastorCost">10000</span>
+	    <br>
+	    
+	    <button id="hireMonsignor" onclick="hireMonsignor()">Hire Monsignor (gives 1000 wafers per second)</button>
 		<br>
 		Monsignori: <span id="monsignori">0</span>
 		<br>
-	    Cost: <span id="monsignorCost">10000</span>
+	    Cost: <span id="monsignorCost">100000</span>
 	    <br>
 	    <br>
 	    
@@ -43,7 +52,29 @@
 	    
 	    </div>
 	    
+	    <div id="fireClergy">
+		
+		<h3>Fire Clergy (gives back half of price)</h3>
+		
+		<button id="fireDeacon" onclick="fireDeacon()">Fire Deacon</button>
+		<br>
+		<br>
+		
+		<button id="firePriets" onclick="firePriest()">Fire Priest</button>
 	    <br>
+	    <br>
+	    
+	    <button id="firePastor" onclick="firePastor()">Fire Pastor</button>
+		<br>
+		<br>
+	
+	    <button id="fireMonsignor" onclick="fireMonsignor()">Fire Monsignor</button>
+	    <br>
+	    <br>
+	    
+	    </div> 
+	    
+	    
 	    <script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
