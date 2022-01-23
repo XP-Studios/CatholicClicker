@@ -2,80 +2,101 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
-	<body>
-		<button onclick="waferClick(clickPower)" id="onclick">Transubstantiate!</button>
-		<br>
-		Wafers: <span id="wafers">0</span>
+	<body id="body">
+		<div class="split left">
+			<button onclick="waferClick(clickPower)" id="onclick">Transubstantiate!</button>
+			<br>
+			Wafers: <span id="wafers">0</span>
+		</div>
 		
-		<div id="clergy">
+		<div class="split right">
+			<div id="clergy">
 			
-		<h3>Hire Clergy</h3>
+			<h3>Hire Clergy</h3>
 			
-		<button id="hireDeacon" onclick="hireDeacon()">Hire Deacon (gives 1 wafer per second)</button>
-		<br>
-		Deacons: <span id="deacons">1</span>
-		<br>
-	    Cost: <span id="deaconCost">100</span>
-		<br>
+			<button id="hireDeacon" onclick="hireDeacon()" onmouseover="deaconMouseover()" onmouseout="deaconMouseout()">Hire Deacon (gives 1 wafer per second)</button>
+			<br>
+			<span id="deaconInfo"></span>
+			<br>
+			Deacons: <span id="deacons">1</span>
+			<br>
+			<br>
+			Cost: <span id="deaconCost">100</span>
+			<br>
+			<br>
 		
-		<button id="hirePriest" onclick="hirePriest()">Hire Priest (gives 10 wafers per second)</button>
-		<br>
-		Priests: <span id="priests">0</span>
-		<br>
-	    Cost: <span id="priestCost">1000</span>
-	    <br>
+			<button id="hirePriest" onclick="hirePriest()" onmouseover="priestMouseover()" onmouseout="priestMouseout()">Hire Priest (gives 10 wafers per second)</button>
+			<br>
+			<span id="priestInfo"></span>
+			<br>
+			Priests: <span id="priests">0</span>
+			<br>
+			<br>
+			Cost: <span id="priestCost">1000</span>
+			<br>
+			<br>
 	    
-	    <button id="hirePastor" onclick="hirePastor()">Hire Pastor (gives 100 wafers per second)</button>
-		<br>
-		Pastors: <span id="pastors">0</span>
-		<br>
-	    Cost: <span id="pastorCost">10000</span>
-	    <br>
+			<button id="hirePastor" onclick="hirePastor()" onmouseover="pastorMouseover()" onmouseout="pastorMouseout()">Hire Pastor (gives 100 wafers per second)</button>
+			<br>
+			<span id="pastorInfo"></span>
+			<br>
+			Pastors: <span id="pastors">0</span>
+			<br>
+			<br>
+			Cost: <span id="pastorCost">10000</span>
+			<br>
+			<br>
 	    
-	    <button id="hireMonsignor" onclick="hireMonsignor()">Hire Monsignor (gives 1000 wafers per second)</button>
-		<br>
-		Monsignori: <span id="monsignori">0</span>
-		<br>
-	    Cost: <span id="monsignorCost">100000</span>
-	    <br>
-	    <br>
+			<button id="hireMonsignor" onclick="hireMonsignor()" onmouseover="monsignorMouseover()" onmouseout="monsignorMouseout()">Hire Monsignor (gives 1000 wafers per second)</button>
+			<br>
+			<span id="monsignorInfo"></span>
+			<br>
+			Monsignori: <span id="monsignori">0</span>
+			<br>
+			<br>
+			Cost: <span id="monsignorCost">100000</span>
+			<br>
+			<br>
+			<br>
 	    
-	    </div> 
+			</div> 
 	    
-	    <div id="upgrades">
+			<div id="upgrades">
 	    
-	    <button onclick="buyClickUpgrade1()">Get click upgrade (clicking twice as powerful)</button>
-		<br>
-	    Cost: <span id="clickUpgrade1Cost">2000</span>
-	    <br>
-	    Purchased: <span id="clickUpgrade1Purchased">No</span>
+			<button onclick="buyClickUpgrade1()">Get click upgrade (clicking twice as powerful)</button>
+			<br>
+			<br>
+			Cost: <span id="clickUpgrade1Cost">2000</span>
+			<br>
+			<br>
+			Purchased: <span id="clickUpgrade1Purchased">No</span>
 	    
-	    </div>
+			</div>
 	    
-	    <div id="fireClergy">
+			<div id="laicizeClergy">
 		
-		<h3>Fire Clergy (gives back half of price)</h3>
+			<h3>Laicize Clergy (gives back half of price)</h3>
 		
-		<button id="fireDeacon" onclick="fireDeacon()">Fire Deacon</button>
-		<br>
-		<br>
+			<button id="laicizeDeacon" onclick="laicizeDeacon()">Laicize Deacon</button>
+			<br>
+			<br>
 		
-		<button id="firePriets" onclick="firePriest()">Fire Priest</button>
-	    <br>
-	    <br>
+			<button id="laicizePriest" onclick="laicizePriest()">Laicize Priest</button>
+			<br>
+			<br>
 	    
-	    <button id="firePastor" onclick="firePastor()">Fire Pastor</button>
-		<br>
-		<br>
+			<button id="laicizePastor" onclick="laicizePastor()">Laicize Pastor</button>
+			<br>
+			<br>
 	
-	    <button id="fireMonsignor" onclick="fireMonsignor()">Fire Monsignor</button>
-	    <br>
-	    <br>
+			<button id="laicizeMonsignor" onclick="laicizeMonsignor()">Laicize Monsignor</button>
+			<br>
+			<br>
 	    
-	    </div> 
+			</div> 
+	    </div>
 	    
 	    
 	    <script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
-
