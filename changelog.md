@@ -11,3 +11,5 @@
 0.0.5: you now start with one deacon, CSS, introduced upgrade
 <br>
 0.0.6: "Click me" button now says "transubstantiate", add buttons to sell/fire clergy, building IDs now labeled as clergy
+<br>
+0.1.0: green background for ordinary time, add descriptions of clergy and click effects, "fire" now says "laicize", transubstantiate button made bigger
